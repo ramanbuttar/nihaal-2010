@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+#wrapper {
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#header {
+	padding-top:40px;
+	padding-bottom:40px;
+	background: transparent url('../images/khanda.png') no-repeat center top; 
+	margin-bottom:-10px;
+}
+
+#copyright {
+	margin:0px;
+	margin-top:10px;
+	font-weight:bold;
+	color:white;
+	text-align:right;
+}
+
+#menu {
+display:inline;
+float:right;
+margin-top:12px;
+height:10px;
+}
+
+#menu a {
+	width: 120px; 
+	height: 45px; 
+	display: block; 
+	float:left;
+	background: transparent url('../images/about.gif') no-repeat; 
+	margin-left:5px;
+}
+
+#menu #about {
+	background: transparent url('../images/about.gif') no-repeat; 
+} 
+#menu #about:hover {
+	background-image: url('../images/about-hover.gif'); 
+}
+
+#menu #charity {
+	background: transparent url('../images/charity.gif') no-repeat; 
+} 
+#menu #charity:hover {
+	background-image: url('../images/charity-hover.gif'); 
+}
+
+#menu #venue {
+	background: transparent url('../images/venue.gif') no-repeat; 
+} 
+#menu #venue:hover {
+	background-image: url('../images/venue-hover.gif'); 
+}
+
+#menu #contact {
+	background: transparent url('../images/contact.gif') no-repeat; 
+} 
+#menu #contact:hover {
+	background-image: url('../images/contact-hover.gif'); 
+}
+
+#main-pic {
+	float:right;
+	margin-top:-90px;
+}
+
+#main-heading {
+	margin:20px;
+	font-weight:bolder;
+	font-size:45px;
+}
+
+#main-subheading {
+	margin:20px;
+	font-size:20px;
+}
+
+#tickets {
+	background: transparent url('../images/tickets.png') no-repeat; 
+	width: 285px; 
+	height: 45px; 
+	display: block; 	
+	margin:40px;
+} 
+
+#videos {
+	height:285px;
+}
+
+.video-wrapper {
+	width: 190px;
+	height:275px;
+	float:left;
+	padding-left:10px;
+}
+
+#video1, #video2, #video3, #video4 {
+	width: 164px;
+	height: 235px;
+	display: block;
+	margin-left:-9px;
+	margin-top:-7px;
+}
+
+#video1 {
+	background: transparent url('../images/video1-gray.png') no-repeat;
+} 
+
+#video1:hover {
+	background: transparent url('../images/video1.png') no-repeat; 
+}
+
+#video2 {
+	background: transparent url('../images/video2-gray.png') no-repeat;
+} 
+
+#video2:hover {
+	background: transparent url('../images/video2.png') no-repeat; 
+}
+
+#video3 {
+	background: transparent url('../images/video3-gray.png') no-repeat;
+} 
+
+#video3:hover {
+	background: transparent url('../images/video3.png') no-repeat; 
+}
+
+#video4 {
+	background: transparent url('../images/video4-gray.png') no-repeat;
+} 
+
+#video4:hover {
+	background: transparent url('../images/video4.png') no-repeat; 
+}
+
+#arrow {
+	float:right;
+	margin-bottom:7px;
+}

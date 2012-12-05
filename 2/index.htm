@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Nihaal 2010</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+		<script type="text/javascript" src="js/cb.js"></script>
+		
+		<STYLE type="text/css" media="screen,projection"> @import 'css/lab.css'; </STYLE>
+		<STYLE type="text/css" media="screen,projection">
+			html {
+				background:transparent;
+			}
+			
+			body {
+				background-image: url('images/background.jpg');
+				background-repeat: repeat-x;
+				font:normal 76% georgia,helvetica,verdana,tahoma,arial,"sans serif";
+			}
+			
+			* html #wrap {
+				width:100%;
+			}
+			
+			/* Default CSS
+             ================================================*/
+			/* Basic styling, used when JavaScript is unsupported */
+			.cbb {
+				margin:1em 0;
+				padding:0 10px;
+				border:1px solid #666;
+				background:#fff;
+			}
+			.cbb h1 {
+				margin:0 -10px;
+				padding:0.3em 10px;
+				background:#efece6;
+				font:bold 1.2em/1 Arial, Helvetica, sans-serif;
+			}
+			/* Normal styling */
+			.cb {margin:0.5em 0;}
+            /* Top corners and border */
+			.bt {
+				height:17px;
+				margin:0 0 0 18px;
+				background:url('images/box.png') no-repeat 100% 0;
+			}
+			.bt div {
+				position:relative;
+				left:-18px;
+				width:18px;
+				height:17px;
+				background:url('images/box.png') no-repeat 0 0;
+				font-size:0;
+				line-height:0;
+			}
+            
+            /* Bottom corners and border */
+			.bb {
+				height:14px;
+				margin:0 0 0 12px;
+				background:url('images/box.png') no-repeat 100% 100%;
+			}
+			.bb div {
+				position:relative;
+				left:-12px;
+				width:12px;
+				height:14px;
+				background:url('images/box.png') no-repeat 0 100%;
+				font-size:0;
+				line-height:0;
+			}
+            
+            /* Left border */
+			.i1 {
+				padding:0 0 0 12px;
+				background:url('images/borders.png') repeat-y 0 0;
+			}
+            /* Right border */
+			.i2 {
+				padding:0 12px 0 0;
+				background:url('images/borders.png') repeat-y 100% 0;
+			}
+            /* Wrapper for the content. Use it to set the background colour and insert some padding between the borders and the content. */
+			.i3 {
+				display:block;
+				margin:0;
+				padding:1px 10px;
+				background:#fff;
+			}
+            /* Make the content wrapper auto clearing so it will contain floats (see http://positioniseverything.net/easyclearing.html). */
+			.i3:after {
+				content:".";
+				display:block;
+				height:0;
+				clear:both;
+				visibility:hidden;
+			}
+			.i3 {display:inline-block;}
+			.i3 {display:block;}
+			/* Default CSS ends here */
+            
+			/* Custom CSS
+             ================================================*/
+			/* You can use different borders for different boxes on the same page. Just adjust the CSS. Here are a few examples, one of which uses the GIF images instead of the PNG images. Note that you can also adjust borders, heights and paddings this way. Remember to adjust the IE CSS as well. */
+            
+			.one {
+				position:absolute;
+				top:0;
+				right:0;
+			}
+			.two {
+				float:left;
+				width:45%;
+			}
+			.two .i1,
+			.two .i2 { background-image:url('images/borders.gif'); }
+			.two .bt,
+			.two .bt div,
+			.two .bb,
+			.two .bb div { background-image:url('images/box.gif'); }
+			#three {
+				float:left;
+				clear:both;
+				width:80%;
+			}
+			#three .cb {
+				float:left;
+				width:40%;
+			}
+			.button {
+				float:left;
+				margin-top:0;
+			}
+			.button .bt {
+				height:8px;
+				margin:0 0 0 9px;
+				background-image:url('images/button.png');
+			}
+			.button .bt div {
+				left:-9px;
+				width:9px;
+				height:8px;
+				background-image:url('images/button.png');
+			}
+			.button .bb {
+				height:8px;
+				margin:0 0 0 8px;
+				background-image:url('images/button.png');
+			}
+			.button .bb div {
+				left:-8px;
+				width:8px;
+				height:8px;
+				background-image:url('images/button.png');
+			}
+			.button .i1 {
+				padding:0 0 0 3px;
+				background-image:url('images/button-borders.png');
+			}
+			.button .i2 {
+				padding:0 3px 0 0;
+				background-image:url('images/button-borders.png');
+			}
+			.button .i3 {
+				padding:0 0.5em;
+				background:#3a3d40 url('images/button.png') no-repeat -3px -8px;
+				font-weight:bold;
+				text-decoration:none;
+				text-align:center;
+			}
+			.button a:link,
+			.button a:visited,
+			.button a:hover {
+				border:none;
+				color:#fff;
+			}
+            
+			/* Just a bit of styling for this demo page. Adjust as you wish. */
+			#absolute-wrapper {
+				position:relative;
+				height:9em;
+			}
+			.cb li {margin-left:1em;}
+            </STYLE>
+		<!--[if lt IE 8]>
+         <style type="text/css">
+         /* Required IE fixes
+         ================================================*/
+         /* Serve gif images to IE/Win pre version 7 */
+         * html .i1,
+         * html .i2 {background-image:url(borders.gif);}
+         * html .bt,
+         * html .bt div,
+         * html .bb,
+         * html .bb div {background-image:url(box.gif);}
+         /* Set a height to fix up some rendering issues. */
+         * html .i1,
+         * html .i3 {height:1px;}
+         
+         /* Give the absolutely positioned box a width (including IE 7)*/
+         .one {width:70%;}
+         
+         /* Custom rules for the buttons */
+         /* All IE versions need a width */
+         .button {width:20em;}
+         /* IE 7 does not need these */
+         * html .button .i1,
+         * html .button .i2 {background:transparent;}
+         * html .button .bt,
+         * html .button .bt div {background-image:url(button.gif);}
+         * html .button .bb,
+         * html .button .bb div {background-image:url(button.gif);}
+         </style>
+         <![endif]-->
+	</HEAD>
+	<BODY>
+		<div id="wrapper">
+			<div id="header">
+				<img id="logo" src="images/logo.png" width="340" height="90" alt="Nihaal 2010" />
+				<div id="menu">
+					<a id="about" href="about.html"></a>
+					<a id="charity" href="charity.html"></a>
+					<a id="venue" href="venue.html"></a>
+					<a id="contact" href="contact.html"></a>
+				</div>
+			</div>
+            
+			<DIV id="wrap"><DIV class="cb"><DIV class="bt"><DIV></DIV></DIV><DIV class="i1"><DIV class="i2"><DIV class="i3">
+				<img id="main-pic" src="images/test4.png" width="450" height="425" alt="TEST" />
+				<H1 id="main-heading">Nihaal 2010</H1>
+				<h2 id="main-subheading">The University of British Columbia and Simon Fraser University Sikh Students' Associations cordially invites the BC Sikh community to an evening of inspiration.</h2>
+                
+				<a id="tickets" href="tickets.html"></a>
+                
+				<div id="videos">
+					<DIV class="cb video-wrapper"><DIV class="bt"><DIV></DIV></DIV><DIV class="i1"><DIV class="i2"><DIV class="i3">
+						<a id="video1" href="video1.html"></a>
+					</DIV></DIV></DIV><DIV class="bb"><DIV></DIV></DIV></DIV>
+					
+					<DIV class="cb video-wrapper"><DIV class="bt"><DIV></DIV></DIV><DIV class="i1"><DIV class="i2"><DIV class="i3">
+						<a id="video2" href="video2.html"></a>
+						<!-- <img id="arrow" src="images/arrow.png" width="57" height="38" /> -->
+					</DIV></DIV></DIV><DIV class="bb"><DIV></DIV></DIV></DIV>
+                    
+					<DIV class="cb video-wrapper"><DIV class="bt"><DIV></DIV></DIV><DIV class="i1"><DIV class="i2"><DIV class="i3">
+						<a id="video3" href="video3.html"></a>
+					</DIV></DIV></DIV><DIV class="bb"><DIV></DIV></DIV></DIV>
+					
+					<DIV class="cb video-wrapper"><DIV class="bt"><DIV></DIV></DIV><DIV class="i1"><DIV class="i2"><DIV class="i3">
+						<a id="video4" href="video4.html"></a>
+					</DIV></DIV></DIV><DIV class="bb"><DIV></DIV></DIV></DIV>
+				</div>
+				
+                
+			</DIV></DIV></DIV><DIV class="bb"><DIV></DIV></DIV></DIV></DIV>
+			<p id="copyright">Nihaal 2010 &copy 2010</p>
+            </div>
+            </BODY>
+            </HTML>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body {
+	background-color:black;
+	margin: 0 auto;
+    width: 450px;
+    text-align:left;
+}
+
+img {
+	display:block;
+	margin-top: 50px;
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* Required IE fixes */
+/* ================================================ */
+/* Serve gif images to IE/Win pre version 7 */
+* html .i1,
+* html .i2 {background-image:url('../images/round-box/borders.gif);}
+* html .bt,
+* html .bt div,
+* html .bb,
+* html .bb div {background-image:url('../images/round-box/box.gif);}
+/* Set a height to fix up some rendering issues. */
+* html .i1,
+* html .i3 {height:1px;}
+
+/* Give the absolutely positioned box a width (including IE 7)*/
+.one {width:70%;}

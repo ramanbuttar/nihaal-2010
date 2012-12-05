@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* START Shared Elements Amongst All Pages */
+
+html {background:transparent;}
+
+body {
+	background: url('../images/background.png') repeat-x #eea934;
+	font:normal 76% georgia,helvetica,verdana,tahoma,arial,"sans serif";
+	padding:0px;
+	margin:0px;
+	/*min-height:1000px;*/
+}
+
+#header {
+	width: 950px; /* use this to control the width of the header */
+	margin: 0px auto; /* center the header on page */
+	height:300px;
+	background: url('../images/khanda.png') no-repeat;
+	top: 30px;
+	left:-20px;
+	position: relative;
+}
+
+#main {
+	max-width:850px; /* use this to control the width of the main white content box */
+	margin:0px auto;
+	margin-top: -125px;
+	position: relative;
+}
+
+#thankyou {
+	max-width:850px;
+	margin:0px auto;
+	padding-top:20px;
+}
+
+#thankyou  #ubc {
+	margin-left:15px;
+}
+
+#thankyou  #presented {
+	margin-left:35px;
+	margin-right:35px;
+	padding-bottom:10px;
+}
+
+#curtains {
+	width: 100%;
+	height:300px;
+	background: url('../images/curtains.png') repeat-x;
+	position:absolute;
+	left:0px; /* IE7 fix */
+}
+
+#header #logo {
+	position: relative;
+	top:15px;
+	left:75px;		
+}
+
+#logo, #sfu, #ubc, #nihaal-poster {
+	/* fixes the underline issue on mouseover */
+	background:transparent;
+}
+
+#header #menu {
+	display:inline;
+	float:right;
+	position: absolute;
+	top:50px;
+	right:50px;
+	z-index:1;
+}
+
+#header #menu a {
+	width: 85px; 
+	height: 31px;
+	display: block; 
+	float:left;
+	margin-left:12px;
+	background: transparent url('../images/menu.png') no-repeat;
+}
+
+#header #menu #about {
+	background-position: -85px 0px; 
+}
+#header #menu #about:hover {
+	background-position: -85px -31px; 
+}
+
+#header #menu #charity {
+	background-position: -170px 0px;  
+} 
+#header #menu #charity:hover {
+	background-position: -170px -31px;  
+} 
+
+#header #menu #venue {
+	background-position: -255px 0px;  
+}
+#header #menu #venue:hover {
+	background-position: -255px -31px;  
+}
+
+#header #menu #sponsors {
+	background-position: -340px 0px;  
+} 
+#header #menu #sponsors:hover {
+	background-position: -340px -31px;  
+} 
+
+#header #menu #contact {
+	background-position: -425px 0px;  
+} 
+#header #menu #contact:hover {
+	background-position: -425px -31px;  
+} 
+
+#main #tickets {
+	background: transparent url('../images/menu.png') no-repeat; 
+	background-position: 0px -62px;
+	width: 448px; 
+	height: 31px;
+	display: block;
+	margin-top:20px;
+	margin-bottom:30px;
+	margin-left:25px;
+}
+
+#main #tickets:hover {
+	background-position: 0px -93px;
+}
+
+#header #slogan {
+	background: url('../images/slogan.png') no-repeat;
+	width:550px;
+	height:300px;
+	position: relative;
+	top:-50px;
+	left:400px;
+	position:absolute;
+}
+
+#main #nishan-top {
+	position:absolute;
+	top:-100px;
+	right:-15px;
+}
+
+#main #nishan-middle {
+	position:absolute;
+	top:-33px;
+	right:-5px;
+}
+
+#main #nishan-bottom {
+	position:absolute;
+	top:164px;
+	right:-15px;
+}
+
+#main #content {
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+#main #content #heading {
+	margin-right:80px;
+	font-weight:normal !important;
+}
+
+#main .video-wrapper {
+	width: 190px;
+	height:100%;
+	float:left;
+	padding-left:10px;
+}
+
+.video-wrapper #video1, .video-wrapper #video2, .video-wrapper #video3, .video-wrapper #video4 {
+	width: 164px;
+	height: 235px;
+	display: block;
+	margin-left:-9px;
+	margin-top:-7px;
+}
+
+.video-wrapper #video1 {
+	background: transparent url('../images/videos/video1.png') no-repeat center right;
+}
+
+.video-wrapper #video2 {
+	background: transparent url('../images/videos/video2.png') no-repeat center right;
+} 
+
+.video-wrapper #video3 {
+	background: transparent url('../images/videos/video3.png') no-repeat center right;
+} 
+
+.video-wrapper #video4 {
+	background: transparent url('../images/videos/video4.png') no-repeat center right;
+} 
+
+.video-wrapper #video1:hover,
+.video-wrapper #video2:hover,
+.video-wrapper #video3:hover,
+.video-wrapper #video4:hover {
+	background-position: center right; 
+}
+
+#crowd-wrapper {
+	background-color: black;
+	width:100%;
+	/*min-height:200px;*/
+	position:relative;
+	z-index:1;
+	top:90px;
+}
+
+#crowd {
+	background: url('../images/crowd.png') repeat-x transparent;
+	width:100%;
+	min-height:250px;
+	position:relative;
+	bottom:140px;
+	z-index:1;
+}
+
+/* END Shared Elements Amongst All Pages */
+
+#main #content h1 {
+	font-weight:bold;
+}
+
+#main #content p,
+#main #content li,
+#main #content label {
+	font-size:16px;
+}
+
+#main #content p {
+	margin-left:15px;
+}
+
+#main #content li {
+	margin-bottom:5px;
+}
+
+#main #content address p {
+	margin-left:40px;
+}
+
+#main #content #ubc-logo, #sfu-logo, #sikhya-logo, #sikhya-building, #nihaal-poster, #massey-outside, #massey-inside  {
+	float:right;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+#main #content #nihaal-poster  {
+	margin-top:85px;
+}
+
+#main #content #iframe {
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+
+#main #content #feedback {
+	width:450px;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+#main #content #feedback #submit {
+	text-align:right;
+}
+
+#main #content #sponsor-logos {
+	text-align:center;
+}
+
+#main #content #sponsor-logos img {
+	margin-bottom:20px;
+	margin-left:10px;
+}
