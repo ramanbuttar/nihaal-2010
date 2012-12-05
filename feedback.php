@@ -3,7 +3,6 @@ $name = $_POST["name"];
 $comments = $_POST["comments"];
 
 $to = "sfussa@gmail.com";
-//$to = "raman.buttar@gmail.com";
 $subject = "Nihaal 2010 - Feedback";
 $message = "Name: " . $name . "\n";
 $message .= "Comments: " . $comments;
